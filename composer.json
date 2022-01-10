@@ -1,0 +1,36 @@
+{
+  "name": "bagisto/bagisto-pre-order",
+  "description": "Allows the customer to pre-order products which are not yet available at the online store.",
+  "keywords": [
+    "bagisto",
+    "product pre order",
+    "pre order"
+  ],
+  "homepage": "https://github.com/bagisto/bagisto-pre-order",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vivek Sharma",
+      "email": "viveksh047@webkul.com",
+      "homepage": "https://bagisto.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "konekt/concord": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Webkul\\PreOrder\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Webkul\\PreOrder\\Providers\\PreOrderServiceProvider"
+      ],
+      "aliases": {}
+    }
+  },
+  "minimum-stability": "dev"
+}
