@@ -1,4 +1,4 @@
-# Introduction:
+# Introduction
 
 Bagisto Pre-order add-on allows the customer to pre-order products which are not yet available at the online store. With the help of Bagisto Pre-order add-on, the customer or the guest user can place orders for out of stock products. The admin can set the whether the customer will pay a full or partial amount of the product.
 
