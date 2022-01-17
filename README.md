@@ -18,7 +18,7 @@ It packs in lots of demanding features that allows your business to scale in no 
 
 - **Bagisto**: v1.3.3
 
-## Installation with composer:
+## Installation :
 - Run the following command
 ```
 composer require bagisto/bagisto-pre-order
@@ -38,52 +38,21 @@ composer dump-autoload
 php artisan migrate
 php artisan route:cache
 php artisan config:cache
-php artisan db:seed --class=Webkul\\PreOrder\\Database\\Seeders\\DatabaseSeeder
-php artisan vendor:publish
-```
--> Press 0 and then press enter to publish all assets and configurations.
-
-## Installation without composer:
-
-- Unzip the respective extension zip and then merge "packages" folder into project root directory.
-- Goto config/app.php file and add following line under 'providers'
-
-```
-Webkul\PreOrder\Providers\PreOrderServiceProvider::class
-```
-
-- Goto composer.json file and add following line under 'psr-4'
-
-```
-"Webkul\\PreOrder\\": "packages/Webkul/PreOrder/src"
-```
-
-- Run these commands below to complete the setup
-
-```
-composer dump-autoload
-```
-
-```
-php artisan optimize
-```
-
-```
-php artisan migrate
-```
-
-```
-php artisan route:cache
 ```
 
 ```
 php artisan db:seed --class=Webkul\\PreOrder\\Database\\Seeders\\DatabaseSeeder
 ```
 
+- If your are windows user then run the below command-
+
+```
+php artisan db:seed --class="Webkul\PreOrder\Database\Seeders\DatabaseSeeder"
+```
+
 ```
 php artisan vendor:publish
-
--> Press 0 and then press enter to publish all assets and configurations.
 ```
+-> Press 0 and then press enter to publish all assets and configurations.`
 
 > That's it, now just execute the project on your specified domain.
