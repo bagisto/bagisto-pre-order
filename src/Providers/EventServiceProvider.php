@@ -26,11 +26,11 @@ class EventServiceProvider extends ServiceProvider
             $viewRenderEventManager->addTemplate('preorder::shop.products.preorder-info');
         });
 
-        Event::listen('checkout.cart.add.before', 'Webkul\PreOrder\Listeners\Cart@cartItemAddBefore');
+        Event::listen('checkout.cart.item.add.before', 'Webkul\PreOrder\Listeners\Cart@cartItemAddBefore');
 
-        Event::listen('checkout.cart.update.before', 'Webkul\PreOrder\Listeners\Cart@cartItemUpdateBefore');
+        Event::listen('checkout.cart.item.update.before', 'Webkul\PreOrder\Listeners\Cart@cartItemUpdateBefore');
 
-        Event::listen('checkout.cart.add.after', 'Webkul\PreOrder\Listeners\Cart@cartItemAddAfter');
+        Event::listen('checkout.cart.item.add.after', 'Webkul\PreOrder\Listeners\Cart@cartItemAddAfter');
 
         Event::listen('checkout.order.save.after', 'Webkul\PreOrder\Listeners\Order@afterPlaceOrder');
 
